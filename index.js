@@ -161,10 +161,49 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+var computer = Math.random();
+    if(computer < .34){
+      computer = 'Rock';
+    }  
+    else if(computer < 67){
+      computer = 'Paper';
+    }
+    else{
+      computer = 'Scissors';
+    }
+
 function game(user, computer){
-    /*add your code here*/
+    
+      if(user === computer){
+        return "it's a tie";
+      }
+      else if(user === "Rock"){
+        if(computer === "Scissors"){
+          return "you win!";
+        }
+        else{
+          return "you lose!";
+        }
+      }
+      else if(user === "Scissors"){
+        if(computer === "Paper"){
+          return "you win!";
+        }
+        else{
+          return "you lose!";
+        }
+      }
+      else if(user === "Paper"){
+        if(computer === "Rock"){
+          return "you win!";
+        }
+        else{
+          return "you lose!";
+        }
+      }
 }
-  
+
+console.log(game('Rock', computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -178,8 +217,8 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers, magic){
+    
   }
 
 
