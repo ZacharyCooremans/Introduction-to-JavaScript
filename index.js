@@ -163,13 +163,13 @@ Use the game function below to do the following:
 
 var computer = Math.random();
     if(computer < .34){
-      computer = 'Rock';
+      computer = 'rock';
     }  
     else if(computer < 67){
-      computer = 'Paper';
+      computer = 'paper';
     }
     else{
-      computer = 'Scissors';
+      computer = 'scissors';
     }
 
 function game(user, computer){
@@ -177,24 +177,24 @@ function game(user, computer){
       if(user === computer){
         return "it's a tie";
       }
-      else if(user === "Rock"){
-        if(computer === "Scissors"){
+      else if(user === "rock"){
+        if(computer === "scissors"){
           return "you win!";
         }
         else{
           return "you lose!";
         }
       }
-      else if(user === "Scissors"){
-        if(computer === "Paper"){
+      else if(user === "scissors"){
+        if(computer === "paper"){
           return "you win!";
         }
         else{
           return "you lose!";
         }
       }
-      else if(user === "Paper"){
-        if(computer === "Rock"){
+      else if(user === "paper"){
+        if(computer === "rock"){
           return "you win!";
         }
         else{
@@ -203,7 +203,7 @@ function game(user, computer){
       }
 }
 
-console.log(game('Rock', computer));
+console.log(game('rock', computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -217,10 +217,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(kilometers, magic){
-    
+function miles(kilometers){
+    return kilometers * 0.621371;
   }
-
+console.log(miles(10));
 
 
 //Task 5b - Feet to CM
@@ -231,10 +231,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48;
   }
- 
+ console.log(feet(160));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -247,10 +247,14 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
 
+function annoyingSong(numBottles) {
+  
+  return `${numBottles} bottles of soda on the wall, ${numBottles} bottles of soda, take one down pass it around ${numBottles - 1} bottles of soda on the wall`;
+}
+console.log(annoyingSong(5))
+
+  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -267,7 +271,7 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
+function grade( ){
   /*Your Code here */
   }
   
